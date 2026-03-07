@@ -3,7 +3,7 @@ name: 🌱 Deploy Garden Site
 on:
   push:
     branches:
-      - main
+      - master
   workflow_dispatch:
 
 jobs:
