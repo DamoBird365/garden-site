@@ -1,0 +1,45 @@
+{{/* Homepage — adds weather widget and garden stats with recent posts */}}
+{{ define "main" }}
+
+  {{/* Home info */}}
+  {{ if .Site.Params.homeInfoParams }}
+    <article class="first-entry home-info">
+      <header class="entry-header">
+        <h1>{{ .Site.Params.homeInfoParams.Title | markdownify }}</h1>
+      </header>
+      <div class="entry-content">
+        <p>{{ .Site.Params.homeInfoParams.Content | markdownify }}</p>
+      </div>
+    </article>
+  {{ end }}
+
+  {{/* Weather widget */}}
+  {{ partial "weather-widget.html" . }}
+
+  {{/* Garden stats */}}
+  {{ partial "garden-stats.html" . }}
+
+  {{/* Recent blog posts */}}
+  {{ $pages := where .Site.RegularPages "Section" "blog" }}
+  {{ range $pages.ByDate.Reverse }}
+    <article class="post-entry">
+      <header class="entry-header">
+        <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      </header>
+      {{ with .Params.vegetables_planted }}
+      <div class="veg-tags">
+        {{ range . }}
+          <span class="veg-tag">🌱 {{ . | title }}</span>
+        {{ end }}
+      </div>
+      {{ end }}
+      <section class="entry-content">
+        <p>{{ .Summary | plainify | truncate 200 }}</p>
+      </section>
+      <footer class="entry-footer">
+        <span>{{ .Date.Format "2 January 2006" }}</span>
+      </footer>
+    </article>
+  {{ end }}
+
+{{ end }}

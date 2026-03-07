@@ -1,0 +1,32 @@
+<!-- Garden stats dashboard widget -->
+{{ $posts := where .Site.RegularPages "Section" "blog" }}
+{{ $totalPosts := len $posts }}
+
+{{ $allVeg := slice }}
+{{ range $posts }}
+  {{ with .Params.vegetables_planted }}
+    {{ range . }}
+      {{ $allVeg = $allVeg | append (lower .) }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ $uniqueVeg := uniq $allVeg }}
+
+<div class="garden-stats">
+  <div class="stat-card">
+    <span class="stat-number">{{ $totalPosts }}</span>
+    <span class="stat-label">Blog Posts</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-number">{{ len $uniqueVeg }}</span>
+    <span class="stat-label">Veg Grown</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-number">{{ len $allVeg }}</span>
+    <span class="stat-label">Plantings</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-number">16</span>
+    <span class="stat-label">On Calendar</span>
+  </div>
+</div>

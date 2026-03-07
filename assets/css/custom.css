@@ -1,0 +1,479 @@
+/* ============================================
+   Damo's Garden — Custom Styles
+   Garden colour palette:
+   - Forest green: #2D5016
+   - Earth brown: #8B6914
+   - Cream: #FFF8E7
+   - Terracotta: #C84B31
+   - Sage green: #87A878
+   ============================================ */
+
+:root {
+  --garden-green: #2D5016;
+  --garden-green-light: #4A7A2E;
+  --garden-brown: #8B6914;
+  --garden-cream: #FFF8E7;
+  --garden-terracotta: #C84B31;
+  --garden-sage: #87A878;
+  --garden-soil: #3E2723;
+}
+
+/* -- Weather Widget -- */
+.weather-card {
+  background: var(--garden-cream);
+  border: 2px solid var(--garden-sage);
+  border-radius: 12px;
+  padding: 1rem;
+  margin: 1rem 0;
+  max-width: 400px;
+}
+
+[data-theme="dark"] .weather-card {
+  background: #1a2e1a;
+  border-color: var(--garden-green);
+}
+
+.weather-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.weather-current {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.weather-main {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.weather-icon-large {
+  font-size: 2.5rem;
+}
+
+.weather-temp {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--garden-green);
+}
+
+[data-theme="dark"] .weather-temp {
+  color: var(--garden-sage);
+}
+
+.weather-details {
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.frost-warning {
+  background: #FFF3CD;
+  border: 1px solid #FFD700;
+  border-radius: 8px;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+[data-theme="dark"] .frost-warning {
+  background: #3a2f00;
+  border-color: #8B6914;
+}
+
+.weather-forecast {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  border-top: 1px solid var(--garden-sage);
+  padding-top: 0.5rem;
+}
+
+.forecast-day {
+  flex: 1;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.forecast-day-name {
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.forecast-icon {
+  font-size: 1.5rem;
+}
+
+.temp-high {
+  font-weight: bold;
+  color: var(--garden-terracotta);
+}
+
+.temp-low {
+  color: #888;
+}
+
+.frost-badge {
+  font-size: 0.7rem;
+}
+
+.weather-error {
+  padding: 1rem;
+  text-align: center;
+  color: #888;
+}
+
+/* -- Planting Calendar -- */
+.calendar-table-wrap {
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+.calendar-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.calendar-table th,
+.calendar-table td {
+  padding: 0.4rem 0.3rem;
+  text-align: center;
+  border: 1px solid #ddd;
+  min-width: 2.5rem;
+}
+
+[data-theme="dark"] .calendar-table th,
+[data-theme="dark"] .calendar-table td {
+  border-color: #444;
+}
+
+.calendar-table th {
+  background: var(--garden-green);
+  color: white;
+  font-weight: 600;
+}
+
+.veg-header {
+  text-align: left !important;
+  min-width: 8rem;
+}
+
+.veg-name-cell {
+  text-align: left !important;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.veg-row {
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.veg-row:hover {
+  background: rgba(45, 80, 22, 0.08);
+}
+
+[data-theme="dark"] .veg-row:hover {
+  background: rgba(135, 168, 120, 0.15);
+}
+
+.current-month {
+  background: rgba(45, 80, 22, 0.05) !important;
+  border-bottom: 3px solid var(--garden-green) !important;
+}
+
+td.sow-indoors {
+  background: #FFB347 !important;
+}
+
+td.sow-outdoors {
+  background: #7BC67E !important;
+}
+
+td.plant-out {
+  background: #5B9BD5 !important;
+}
+
+td.harvest {
+  background: #E8665D !important;
+  color: white;
+}
+
+td.planted-marker {
+  position: relative;
+  font-size: 0.9rem;
+}
+
+.planted-badge {
+  font-size: 0.75rem;
+}
+
+/* Calendar legend */
+.calendar-legend {
+  margin: 1rem 0;
+}
+
+.legend-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.85rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.legend-colour {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+.legend-colour.sow-indoors {
+  background: #FFB347;
+}
+
+.legend-colour.sow-outdoors {
+  background: #7BC67E;
+}
+
+.legend-colour.plant-out {
+  background: #5B9BD5;
+}
+
+.legend-colour.harvest {
+  background: #E8665D;
+}
+
+.legend-colour.planted-marker {
+  background: var(--garden-green);
+}
+
+/* Veg details panel */
+.veg-details-panel {
+  background: var(--garden-cream);
+  border: 2px solid var(--garden-sage);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+}
+
+[data-theme="dark"] .veg-details-panel {
+  background: #1a2e1a;
+  border-color: var(--garden-green);
+}
+
+/* -- Gallery -- */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.gallery-placeholder {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.2rem;
+  color: #888;
+}
+
+/* -- Garden Stats -- */
+.garden-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.stat-card {
+  background: var(--garden-cream);
+  border: 1px solid var(--garden-sage);
+  border-radius: 8px;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+[data-theme="dark"] .stat-card {
+  background: #1a2e1a;
+  border-color: var(--garden-green);
+}
+
+.stat-number {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--garden-green);
+  display: block;
+}
+
+[data-theme="dark"] .stat-number {
+  color: var(--garden-sage);
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* -- Affiliate / Amazon cards -- */
+.amazon-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--garden-cream);
+  border: 1px solid var(--garden-sage);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin: 0.5rem 0;
+  transition: box-shadow 0.2s;
+}
+
+.amazon-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] .amazon-card {
+  background: #1a2e1a;
+  border-color: var(--garden-green);
+}
+
+.amazon-card a {
+  color: var(--garden-green);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.amazon-card a:hover {
+  color: var(--garden-terracotta);
+}
+
+/* -- Weather badge on blog posts -- */
+.post-weather-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--garden-cream);
+  border: 1px solid var(--garden-sage);
+  border-radius: 20px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.8rem;
+  margin: 0.5rem 0;
+}
+
+[data-theme="dark"] .post-weather-badge {
+  background: #1a2e1a;
+  border-color: var(--garden-green);
+}
+
+/* -- Vegetables planted tags -- */
+.veg-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.5rem 0;
+}
+
+.veg-tag {
+  background: var(--garden-green);
+  color: white;
+  border-radius: 12px;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.75rem;
+  text-decoration: none;
+}
+
+.veg-tag:hover {
+  background: var(--garden-green-light);
+}
+
+/* -- Social share buttons -- */
+.share-buttons {
+  display: flex;
+  gap: 0.5rem;
+  margin: 1rem 0;
+  flex-wrap: wrap;
+}
+
+.share-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: white;
+  transition: opacity 0.2s;
+}
+
+.share-btn:hover {
+  opacity: 0.85;
+  color: white;
+}
+
+.share-btn.twitter {
+  background: #1DA1F2;
+}
+
+.share-btn.facebook {
+  background: #4267B2;
+}
+
+.share-btn.pinterest {
+  background: #E60023;
+}
+
+.share-btn.whatsapp {
+  background: #25D366;
+}
+
+/* -- Responsive -- */
+@media (max-width: 768px) {
+  .weather-current {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .weather-forecast {
+    gap: 0.25rem;
+  }
+
+  .forecast-day {
+    font-size: 0.7rem;
+  }
+
+  .calendar-table {
+    font-size: 0.7rem;
+  }
+
+  .calendar-table th,
+  .calendar-table td {
+    padding: 0.25rem 0.15rem;
+    min-width: 1.8rem;
+  }
+
+  .veg-header {
+    min-width: 5rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}

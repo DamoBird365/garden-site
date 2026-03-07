@@ -1,0 +1,62 @@
+{{ define "main" }}
+<article>
+  <header class="post-header">
+    <h1 class="post-title">{{ .Title }}</h1>
+    {{ partial "post_meta.html" . }}
+    {{ partial "weather-badge.html" . }}
+    {{ partial "veg-tags.html" . }}
+  </header>
+
+  {{ if .Params.cover.image }}
+  <figure class="post-cover">
+    <img src="{{ .Params.cover.image }}" alt="{{ .Params.cover.alt | default .Title }}" loading="lazy" />
+    {{ with .Params.cover.caption }}<figcaption>{{ . }}</figcaption>{{ end }}
+  </figure>
+  {{ end }}
+
+  <div class="post-content">
+    {{ .Content }}
+  </div>
+
+  {{ with .Params.affiliate_links }}
+  <div class="post-affiliates">
+    <h3>🛒 Shop This Post</h3>
+    {{ range . }}
+    {{ $tag := .tag | default "damobird365-21" }}
+    {{ $href := .url }}
+    {{ if not (in .url "tag=") }}
+      {{ if in .url "?" }}
+        {{ $href = printf "%s&tag=%s" .url $tag }}
+      {{ else }}
+        {{ $href = printf "%s?tag=%s" .url $tag }}
+      {{ end }}
+    {{ end }}
+    <div class="amazon-card">
+      <span>🛒</span>
+      <span><a href="{{ $href }}" target="_blank" rel="noopener sponsored">{{ .name }}</a></span>
+    </div>
+    {{ end }}
+  </div>
+  {{ end }}
+
+  {{ partial "share-buttons.html" . }}
+</article>
+
+<!-- Giscus Comments -->
+<script src="https://giscus.app/client.js"
+  data-repo="DamoBird365/garden-site"
+  data-repo-id=""
+  data-category="Blog Comments"
+  data-category-id=""
+  data-mapping="pathname"
+  data-strict="0"
+  data-reactions-enabled="1"
+  data-emit-metadata="0"
+  data-input-position="top"
+  data-theme="preferred_color_scheme"
+  data-lang="en"
+  crossorigin="anonymous"
+  async>
+</script>
+
+{{ end }}

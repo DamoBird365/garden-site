@@ -1,0 +1,19 @@
+{{/* Amazon affiliate link shortcode
+     Usage: amazon name="Carrot Seeds" url="https://amazon.co.uk/..." tag="damobird365-21" */}}
+{{ $name := .Get "name" }}
+{{ $url := .Get "url" }}
+{{ $tag := .Get "tag" | default "damobird365-21" }}
+
+{{ $finalURL := $url }}
+{{ if not (in $url "tag=") }}
+  {{ if in $url "?" }}
+    {{ $finalURL = printf "%s&tag=%s" $url $tag }}
+  {{ else }}
+    {{ $finalURL = printf "%s?tag=%s" $url $tag }}
+  {{ end }}
+{{ end }}
+
+<div class="amazon-card">
+  <span>🛒</span>
+  <span><a href="{{ $finalURL }}" target="_blank" rel="noopener sponsored">{{ $name }}</a> — <small>Amazon affiliate link</small></span>
+</div>

@@ -1,0 +1,8 @@
+<!-- Vegetables planted tags for blog posts -->
+{{ with .Params.vegetables_planted }}
+  <div class="veg-tags">
+    {{ range . }}
+      <a class="veg-tag" href="/vegetables/{{ . | urlize }}/">🌱 {{ . | title }}</a>
+    {{ end }}
+  </div>
+{{ end }}

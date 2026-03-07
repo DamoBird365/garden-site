@@ -1,0 +1,184 @@
+{
+  "location": "Aberdeen, Northeast Scotland",
+  "zone": "USDA 8a / RHS H5",
+  "lastFrost": "Early-Mid May",
+  "firstFrost": "Mid-Late October",
+  "vegetables": [
+    {
+      "name": "Carrots",
+      "emoji": "🥕",
+      "category": "root",
+      "sowIndoors": null,
+      "sowOutdoors": { "start": 3, "end": 5 },
+      "plantOut": null,
+      "harvest": { "start": 7, "end": 10 },
+      "notes": "Sow direct into fine soil. Protect early sowings with fleece. Avoid stony ground.",
+      "varieties": ["Nantes 2", "Chantenay Red Cored", "Autumn King"]
+    },
+    {
+      "name": "Parsnips",
+      "emoji": "🥕",
+      "category": "root",
+      "sowIndoors": null,
+      "sowOutdoors": { "start": 3, "end": 4 },
+      "plantOut": null,
+      "harvest": { "start": 10, "end": 14 },
+      "notes": "Sow direct. Very slow to germinate (3-4 weeks). Flavour improves after frost.",
+      "varieties": ["Tender and True", "Gladiator"]
+    },
+    {
+      "name": "Tomatoes",
+      "emoji": "🍅",
+      "category": "fruiting",
+      "sowIndoors": { "start": 2, "end": 3 },
+      "sowOutdoors": null,
+      "plantOut": { "start": 5.5, "end": 6 },
+      "harvest": { "start": 7, "end": 9 },
+      "notes": "Best grown under cover in NE Scotland — greenhouse or polytunnel. Outdoor growing risky.",
+      "varieties": ["Gardener's Delight", "Sungold", "Moneymaker"]
+    },
+    {
+      "name": "Peppers",
+      "emoji": "🌶️",
+      "category": "fruiting",
+      "sowIndoors": { "start": 2, "end": 3 },
+      "sowOutdoors": null,
+      "plantOut": { "start": 5.5, "end": 6 },
+      "harvest": { "start": 7, "end": 9 },
+      "notes": "Need warmth — greenhouse essential in Aberdeen. Start early for best results.",
+      "varieties": ["Bell Boy", "Hungarian Hot Wax", "Padron"]
+    },
+    {
+      "name": "Courgettes",
+      "emoji": "🥒",
+      "category": "fruiting",
+      "sowIndoors": { "start": 4, "end": 5 },
+      "sowOutdoors": { "start": 5.5, "end": 6 },
+      "plantOut": { "start": 5.5, "end": 6 },
+      "harvest": { "start": 6, "end": 9 },
+      "notes": "Very productive — 2-3 plants is usually plenty! Harvest when small for best flavour.",
+      "varieties": ["Black Beauty", "Defender", "Romanesco"]
+    },
+    {
+      "name": "Potatoes",
+      "emoji": "🥔",
+      "category": "root",
+      "sowIndoors": { "start": 2, "end": 3 },
+      "sowOutdoors": { "start": 3, "end": 5 },
+      "plantOut": null,
+      "harvest": { "start": 6, "end": 10 },
+      "notes": "Chit from Feb on a bright windowsill. Plant first earlies late March, maincrop in May. Earth up as they grow.",
+      "varieties": ["Charlotte", "Maris Piper", "Rocket"]
+    },
+    {
+      "name": "Onions",
+      "emoji": "🧅",
+      "category": "allium",
+      "sowIndoors": { "start": 1, "end": 2 },
+      "sowOutdoors": { "start": 3, "end": 4 },
+      "plantOut": { "start": 4, "end": 4 },
+      "harvest": { "start": 7, "end": 9 },
+      "notes": "Sets are easiest. Push into soil so tips just showing. Bend tops over in July to help ripening.",
+      "varieties": ["Sturon", "Red Baron", "Setton"]
+    },
+    {
+      "name": "Sweetcorn",
+      "emoji": "🌽",
+      "category": "fruiting",
+      "sowIndoors": { "start": 4, "end": 5 },
+      "sowOutdoors": null,
+      "plantOut": { "start": 6, "end": 6 },
+      "harvest": { "start": 8, "end": 9 },
+      "notes": "Needs the warmest, most sheltered spot. Plant in blocks (not rows) for wind pollination. Challenging in NE Scotland!",
+      "varieties": ["Swift", "Earlibird"]
+    },
+    {
+      "name": "Lettuce",
+      "emoji": "🥬",
+      "category": "leaf",
+      "sowIndoors": { "start": 2, "end": 3 },
+      "sowOutdoors": { "start": 3, "end": 9 },
+      "plantOut": { "start": 4, "end": 5 },
+      "harvest": { "start": 5, "end": 10 },
+      "notes": "Succession sow every 2-3 weeks for continuous harvest. Tolerates partial shade. Quick to grow!",
+      "varieties": ["Little Gem", "Lollo Rosso", "Butterhead"]
+    },
+    {
+      "name": "Broccoli",
+      "emoji": "🥦",
+      "category": "brassica",
+      "sowIndoors": { "start": 3, "end": 4 },
+      "sowOutdoors": null,
+      "plantOut": { "start": 5, "end": 6 },
+      "harvest": { "start": 14, "end": 16 },
+      "notes": "Purple sprouting broccoli is ideal for Scotland — overwinters and harvests Feb-Apr. Net against pigeons!",
+      "varieties": ["Purple Sprouting Early", "Purple Sprouting Late", "Claret"]
+    },
+    {
+      "name": "Kale",
+      "emoji": "🥬",
+      "category": "brassica",
+      "sowIndoors": { "start": 3, "end": 4 },
+      "sowOutdoors": { "start": 4, "end": 6 },
+      "plantOut": { "start": 5, "end": 6 },
+      "harvest": { "start": 9, "end": 15 },
+      "notes": "Ultra-hardy — grows through Scottish winter! Pick leaves from the bottom up. Net against pigeons.",
+      "varieties": ["Cavolo Nero", "Winterbor", "Red Russian"]
+    },
+    {
+      "name": "Peas",
+      "emoji": "🫛",
+      "category": "legume",
+      "sowIndoors": null,
+      "sowOutdoors": { "start": 3, "end": 6 },
+      "plantOut": null,
+      "harvest": { "start": 6, "end": 9 },
+      "notes": "Sow direct. Provide support with sticks or netting. Pick regularly for more pods.",
+      "varieties": ["Kelvedon Wonder", "Hurst Green Shaft", "Oregon Sugar Pod"]
+    },
+    {
+      "name": "Broad Beans",
+      "emoji": "🫘",
+      "category": "legume",
+      "sowIndoors": null,
+      "sowOutdoors": { "start": 2, "end": 4 },
+      "plantOut": null,
+      "harvest": { "start": 6, "end": 8 },
+      "notes": "Very hardy — one of the earliest crops to sow. Pinch out tips when first pods form to deter blackfly.",
+      "varieties": ["Aquadulce Claudia", "The Sutton", "Masterpiece Green Longpod"]
+    },
+    {
+      "name": "Beetroot",
+      "emoji": "🟣",
+      "category": "root",
+      "sowIndoors": null,
+      "sowOutdoors": { "start": 4, "end": 6 },
+      "plantOut": null,
+      "harvest": { "start": 7, "end": 10 },
+      "notes": "Sow direct. Soak seeds overnight for faster germination. Harvest golf-ball size for sweetest flavour.",
+      "varieties": ["Boltardy", "Detroit Dark Red", "Chioggia"]
+    },
+    {
+      "name": "Leeks",
+      "emoji": "🧅",
+      "category": "allium",
+      "sowIndoors": { "start": 1, "end": 3 },
+      "sowOutdoors": null,
+      "plantOut": { "start": 5, "end": 6 },
+      "harvest": { "start": 9, "end": 15 },
+      "notes": "Transplant into deep holes and water in — don't fill the hole. Very winter-hardy, harvest as needed.",
+      "varieties": ["Musselburgh", "Blue Solaise", "Autumn Mammoth"]
+    },
+    {
+      "name": "Turnips & Swede",
+      "emoji": "🟤",
+      "category": "root",
+      "sowIndoors": null,
+      "sowOutdoors": { "start": 4, "end": 7 },
+      "plantOut": null,
+      "harvest": { "start": 7, "end": 12 },
+      "notes": "Traditional Scottish crop! Swede needs longer growing season. Both store well over winter.",
+      "varieties": ["Purple Top Milan", "Marian (Swede)", "Invitation (Swede)"]
+    }
+  ]
+}

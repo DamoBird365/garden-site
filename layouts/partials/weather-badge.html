@@ -1,0 +1,9 @@
+<!-- Weather badge for blog posts — shows conditions when post was written -->
+{{ with .Params.weather }}
+  {{ if .condition }}
+    <div class="post-weather-badge">
+      🌡️ {{ .temp_c }}°C · {{ .condition }} · 💨 {{ .wind_mph }} mph
+      {{ if .recorded_at }} · {{ .recorded_at }}{{ end }}
+    </div>
+  {{ end }}
+{{ end }}

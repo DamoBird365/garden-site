@@ -1,0 +1,45 @@
+name: 🌱 Deploy Garden Site
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Checkout code
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+          fetch-depth: 0
+
+      - name: 🔧 Install Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: 'latest'
+          extended: true
+
+      - name: 🏗️ Build site
+        run: hugo --minify
+
+      - name: 📁 Copy data files for calendar
+        run: cp data/planting-calendar.json public/data/planting-calendar.json
+        continue-on-error: true
+
+      - name: 🚀 Deploy via FTP
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq lftp
+          lftp -c "
+            set ftp:ssl-allow true;
+            set ssl:verify-certificate false;
+            open -u $FTP_USERNAME,$FTP_PASSWORD $FTP_HOSTNAME;
+            mirror -R --delete --verbose --parallel=5 ./public/ $FTP_REMOTE_DIR
+          "
+        env:
+          FTP_HOSTNAME: ${{ secrets.FTP_HOSTNAME }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          FTP_REMOTE_DIR: ${{ secrets.FTP_REMOTE_DIR }}

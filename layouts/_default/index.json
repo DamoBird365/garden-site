@@ -1,0 +1,16 @@
+{{/* JSON output for search and calendar integration */}}
+{{- $pages := where .Site.RegularPages "Section" "blog" -}}
+{{- $result := slice -}}
+{{- range $pages -}}
+  {{- $entry := dict
+    "title" .Title
+    "permalink" .Permalink
+    "date" (.Date.Format "2006-01-02")
+    "summary" (.Summary | plainify | truncate 200)
+    "tags" .Params.tags
+    "categories" .Params.categories
+    "vegetables_planted" .Params.vegetables_planted
+  -}}
+  {{- $result = $result | append $entry -}}
+{{- end -}}
+{{- $result | jsonify -}}
