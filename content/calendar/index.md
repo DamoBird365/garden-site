@@ -9,6 +9,8 @@ layout: "calendar"
 
 An interactive planting calendar tailored for **Aberdeen and Northeast Scotland**. See when to sow, plant out, and harvest each vegetable — and track what I've actually planted this year.
 
+<div id="monthly-summary"></div>
+
 <div id="planting-calendar"></div>
 
 <div id="calendar-legend" class="calendar-legend">
