@@ -36,7 +36,7 @@ jobs:
             set ftp:ssl-allow true;
             set ssl:verify-certificate false;
             open -u $FTP_USERNAME,$FTP_PASSWORD $FTP_HOSTNAME;
-            mirror -R --delete --verbose --parallel=5 ./public/ $FTP_REMOTE_DIR
+            mirror -R --only-newer --verbose --parallel=5 ./public/ $FTP_REMOTE_DIR
           "
         env:
           FTP_HOSTNAME: ${{ secrets.FTP_HOSTNAME }}
