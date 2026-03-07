@@ -1,4 +1,4 @@
-baseURL = 'http://garden.damobird365.com/'
+baseURL = 'https://garden.damobird365.com/'
 languageCode = 'en-gb'
 title = "Damo's Garden"
 theme = 'PaperMod'
