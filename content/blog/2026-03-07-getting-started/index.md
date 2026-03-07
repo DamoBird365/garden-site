@@ -16,7 +16,16 @@ cover:
   image: ""
   alt: "Damo's garden in early spring"
   caption: ""
-affiliate_links: []
+affiliate_links:
+  - name: "Garland Super7 Heated Propagator"
+    url: "https://www.amazon.co.uk/s?k=Garland+Super7+Electric+Heated+Propagator"
+    tag: "damobird365-21"
+  - name: "Sungold F1 Tomato Seeds"
+    url: "https://www.amazon.co.uk/s?k=sungold+F1+tomato+seeds"
+    tag: "damobird365-21"
+  - name: "Kelvedon Wonder Pea Seeds"
+    url: "https://www.amazon.co.uk/s?k=kelvedon+wonder+pea+seeds"
+    tag: "damobird365-21"
 ShowToc: false
 ShowReadingTime: true
 ---
@@ -52,6 +61,8 @@ This year I'm going for a mix of reliable favourites and a few challenges:
 - **Tomatoes** — Sungold cherry tomatoes
 - **Peppers** — Padron (fingers crossed)
 - **Courgettes** — starting indoors, planting out late May
+
+I'll be using a {{< amazon name="Garland Super7 Heated Propagator" url="https://www.amazon.co.uk/s?k=Garland+Super7+Electric+Heated+Propagator" tag="damobird365-21" >}} to get the tomatoes and peppers started early — essential when you live this far north!
 
 ### The Ambitious Ones 🌽
 - **Sweetcorn** — Swift variety, in the sunniest corner
