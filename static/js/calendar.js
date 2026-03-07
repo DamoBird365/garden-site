@@ -150,6 +150,81 @@
     });
   }
 
+  function buildSummaryCard(title, vegs, cssClass, icon) {
+    const items = vegs
+      .map((v) => `<span class="summary-veg-tag">${v.emoji} ${v.name}</span>`)
+      .join("");
+    return `<div class="summary-card summary-card--${cssClass}">
+      <h3 class="summary-card-title">${icon} ${title}</h3>
+      <div class="summary-veg-list">${items}</div>
+    </div>`;
+  }
+
+  function createMonthlySummary(vegetables, currentMonth) {
+    const container = document.getElementById("monthly-summary");
+    if (!container) return;
+
+    const MONTH_NAMES = [
+      "January", "February", "March", "April", "May", "June",
+      "July", "August", "September", "October", "November", "December",
+    ];
+    const monthName = MONTH_NAMES[currentMonth];
+    const m = currentMonth + 1; // convert to 1-based month number
+
+    const sowIndoors = [];
+    const sowOutdoors = [];
+    const plantOut = [];
+    const harvest = [];
+
+    vegetables.forEach((veg) => {
+      // sowIndoors.start is always a whole month; sowOutdoors/plantOut.start may be decimal (e.g. 5.5 = late May)
+      if (veg.sowIndoors && m >= veg.sowIndoors.start && m <= veg.sowIndoors.end) {
+        sowIndoors.push(veg);
+      }
+      if (veg.sowOutdoors && m >= Math.floor(veg.sowOutdoors.start) && m <= veg.sowOutdoors.end) {
+        sowOutdoors.push(veg);
+      }
+      if (veg.plantOut && m >= Math.floor(veg.plantOut.start) && m <= veg.plantOut.end) {
+        plantOut.push(veg);
+      }
+      if (veg.harvest) {
+        const hStart = veg.harvest.start;
+        const hEnd = veg.harvest.end;
+        // hEnd > 12 means the harvest window wraps into the next calendar year (e.g. 14 = February)
+        if (hEnd <= 12) {
+          if (m >= hStart && m <= hEnd) harvest.push(veg);
+        } else {
+          // Wraps around year (e.g., harvest.end = 14 means February next year)
+          if (m >= hStart || m <= hEnd - 12) harvest.push(veg);
+        }
+      }
+    });
+
+    let html = `<div class="monthly-summary">
+      <h2 class="monthly-summary-title">🗓️ What to do in ${monthName}</h2>
+      <div class="monthly-summary-grid">`;
+
+    if (sowIndoors.length > 0) {
+      html += buildSummaryCard("Sow Indoors", sowIndoors, "sow-indoors", "🏠");
+    }
+    if (sowOutdoors.length > 0) {
+      html += buildSummaryCard("Sow Outdoors", sowOutdoors, "sow-outdoors", "🌿");
+    }
+    if (plantOut.length > 0) {
+      html += buildSummaryCard("Plant Out", plantOut, "plant-out", "🌱");
+    }
+    if (harvest.length > 0) {
+      html += buildSummaryCard("Harvest", harvest, "harvest", "🧺");
+    }
+
+    if (!sowIndoors.length && !sowOutdoors.length && !plantOut.length && !harvest.length) {
+      html += `<p class="monthly-summary-empty">No specific activities scheduled for ${monthName}.</p>`;
+    }
+
+    html += `</div></div>`;
+    container.innerHTML = html;
+  }
+
   function showVegDetails(veg, plantedPosts) {
     const panel = document.getElementById("veg-details");
     if (!panel) return;
@@ -178,6 +253,8 @@
     ]);
 
     if (calendarData) {
+      const currentMonth = new Date().getMonth(); // 0-based
+      createMonthlySummary(calendarData.vegetables, currentMonth);
       createCalendarGrid(calendarData.vegetables, plantedPosts);
     } else {
       const container = document.getElementById("planting-calendar");
