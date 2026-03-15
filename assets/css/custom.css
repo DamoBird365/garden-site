@@ -380,20 +380,130 @@ td.planted-marker {
   border-color: var(--garden-green);
 }
 
-/* -- Gallery -- */
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 1rem;
-  margin: 1rem 0;
+/* -- Gallery: Sketchbook Style -- */
+.gallery-page {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-.gallery-placeholder {
-  grid-column: 1 / -1;
+.gallery-intro {
   text-align: center;
-  padding: 3rem;
-  font-size: 1.2rem;
-  color: #888;
+  margin-bottom: 2rem;
+  color: #666;
+  font-style: italic;
+}
+
+.gallery-season {
+  margin-bottom: 3rem;
+}
+
+.season-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px dashed var(--garden-sage);
+}
+
+.season-emoji {
+  font-size: 1.8rem;
+}
+
+.season-empty {
+  text-align: center;
+  padding: 2rem;
+  color: #999;
+  font-style: italic;
+}
+
+.sketchbook-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+/* Polaroid card */
+.polaroid {
+  display: block;
+  background: #fff;
+  padding: 0.8rem 0.8rem 0.4rem 0.8rem;
+  box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.15), 0 1px 3px rgba(0, 0, 0, 0.08);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 260px;
+}
+
+.polaroid:hover {
+  transform: scale(1.04) rotate(0deg) !important;
+  box-shadow: 4px 6px 20px rgba(0, 0, 0, 0.22);
+  z-index: 2;
+}
+
+.polaroid-frame img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.polaroid-caption {
+  font-size: 0.8rem;
+  color: #555;
+  text-align: center;
+  margin: 0.5rem 0 0.3rem 0;
+  line-height: 1.3;
+}
+
+/* Sketchbook rotations */
+.polaroid:nth-child(6n+1) { transform: rotate(-2.5deg); }
+.polaroid:nth-child(6n+2) { transform: rotate(1.8deg); width: 300px; }
+.polaroid:nth-child(6n+3) { transform: rotate(-1.2deg); }
+.polaroid:nth-child(6n+4) { transform: rotate(2.8deg); width: 240px; }
+.polaroid:nth-child(6n+5) { transform: rotate(-0.8deg); width: 280px; }
+.polaroid:nth-child(6n+6) { transform: rotate(1.5deg); }
+
+/* Varied image heights for visual interest */
+.polaroid:nth-child(6n+2) .polaroid-frame img { height: 240px; }
+.polaroid:nth-child(6n+4) .polaroid-frame img { height: 180px; }
+.polaroid:nth-child(6n+5) .polaroid-frame img { height: 220px; }
+
+/* Dark mode */
+[data-theme="dark"] .polaroid {
+  background: #2a2a2a;
+  box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.4), 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="dark"] .polaroid-caption {
+  color: #aaa;
+}
+
+[data-theme="dark"] .gallery-intro {
+  color: #999;
+}
+
+[data-theme="dark"] .season-header {
+  border-bottom-color: var(--garden-green);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .polaroid {
+    width: 100% !important;
+  }
+  .polaroid:nth-child(n) {
+    transform: rotate(0deg);
+  }
+  .polaroid-frame img {
+    height: 220px !important;
+  }
+  .sketchbook-grid {
+    gap: 1.5rem;
+  }
 }
 
 /* -- Garden Stats -- */
@@ -574,9 +684,5 @@ td.planted-marker {
 
   .veg-header {
     min-width: 5rem;
-  }
-
-  .gallery-grid {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   }
 }

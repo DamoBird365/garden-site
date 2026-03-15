@@ -1,5 +1,83 @@
 {{ define "main" }}
 <div class="gallery-page">
-  {{ .Content }}
+  <div class="gallery-intro">
+    {{ .Content }}
+  </div>
+
+  {{/* Define seasons with their month ranges */}}
+  {{ $seasons := slice
+    (dict "name" "Spring" "emoji" "🌱" "months" (slice 3 4 5))
+    (dict "name" "Summer" "emoji" "☀️" "months" (slice 6 7 8))
+    (dict "name" "Autumn" "emoji" "🍂" "months" (slice 9 10 11))
+    (dict "name" "Winter" "emoji" "❄️" "months" (slice 12 1 2))
+  }}
+
+  {{/* Collect all images from blog posts */}}
+  {{ $allImages := slice }}
+  {{ range where .Site.RegularPages "Section" "blog" }}
+    {{ $post := . }}
+    {{ $month := int (.Date.Month) }}
+
+    {{/* Add cover image if it exists */}}
+    {{ with .Params.cover }}
+      {{ if .image }}
+        {{ $allImages = $allImages | append (dict
+          "file" .image
+          "alt" (default .image .alt)
+          "post" $post
+          "month" $month
+          "date" $post.Date
+        ) }}
+      {{ end }}
+    {{ end }}
+
+    {{/* Add images from images list */}}
+    {{ with .Params.images }}
+      {{ range . }}
+        {{ $allImages = $allImages | append (dict
+          "file" .file
+          "alt" (default .file .alt)
+          "post" $post
+          "month" $month
+          "date" $post.Date
+        ) }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{/* Render each season */}}
+  {{ range $season := $seasons }}
+    {{ $seasonImages := slice }}
+    {{ range $img := $allImages }}
+      {{ $imgMonth := int .month }}
+      {{ range $season.months }}
+        {{ if eq (int .) $imgMonth }}
+          {{ $seasonImages = $seasonImages | append $img }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+
+    <div class="gallery-season">
+      <h2 class="season-header">
+        <span class="season-emoji">{{ $season.emoji }}</span>
+        <span class="season-name">{{ $season.name }}</span>
+      </h2>
+
+      {{ if $seasonImages }}
+        <div class="sketchbook-grid">
+          {{ range $seasonImages }}
+            <a href="{{ .post.RelPermalink }}" class="polaroid" title="From: {{ .post.Title }}">
+              <div class="polaroid-frame">
+                <img src="{{ .post.RelPermalink }}{{ .file }}" alt="{{ .alt }}" loading="lazy">
+              </div>
+              <p class="polaroid-caption">{{ .alt }}</p>
+            </a>
+          {{ end }}
+        </div>
+      {{ else }}
+        <p class="season-empty">Nothing here yet — the {{ lower $season.name }} hasn't started!</p>
+      {{ end }}
+    </div>
+  {{ end }}
 </div>
 {{ end }}

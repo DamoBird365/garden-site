@@ -16,6 +16,11 @@ cover:
   image: "damo-greenhouse-selfie.jpg"
   alt: "Damo in the greenhouse on the first tidy-up day of spring"
   caption: ""
+images:
+  - file: "greenhouse-tidy.jpg"
+    alt: "The greenhouse after a good tidy — pots ready, grape trees budding on the bench"
+  - file: "polytunnel-beds.jpg"
+    alt: "Inside the polytunnel — raised beds cleared, shelving tidied, compost bags at the ready"
 affiliate_links: []
 ShowToc: false
 ShowReadingTime: true
