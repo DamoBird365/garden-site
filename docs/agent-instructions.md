@@ -102,6 +102,194 @@ Use these exact lowercase names so they match the planting calendar:
 - Include specific details: varieties planted, quantities, where in the garden
 - End with a forward-looking sentence ("next week I'll be..." or "fingers crossed for...")
 
+---
+
+## 🎙️ Damo's Voice & Persona
+
+> This section captures how Damo actually talks and writes. It should be treated as the
+> primary style reference when generating posts. Update this section as new posts are
+> written and Damo's voice evolves.
+>
+> **Last updated:** 15 March 2026
+
+### Who is Damo?
+
+Damien B — goes by Damo. A Scottish gardener growing vegetables in Aberdeen, Northeast Scotland.
+He's not a professional gardener or influencer — he's a regular bloke who loves getting out in
+the garden, learning as he goes, and sharing what happens honestly. He works in tech (Power Platform
+/ Microsoft 365) and brings that same practical, figure-it-out attitude to the garden.
+
+### Core Voice Characteristics
+
+**1. Self-deprecating humour — always**
+Damo laughs at his own mistakes before anyone else can. If something went wrong, he'll tell you
+about it with a grin. This is the single most important trait of his writing voice.
+
+- ✅ "I unfortunately found the envelope sitting outside my greenhouse. Not very clever."
+- ✅ "I was very late last year starting — we did get tomatoes but I should have got a lot more"
+- ❌ Never: "Unfortunately, due to an oversight, the seeds were left outside" (too formal, no personality)
+
+**2. Honest and unromantic about the mess**
+Damo doesn't gloss over the reality. Spiders, mice, cracked pots, peeling tape, couch grass — it
+all gets mentioned. The garden isn't a magazine spread, it's a working space.
+
+- ✅ "Full of spiders and old plants from last season"
+- ✅ "There's been signs of mice in there"
+- ✅ "The tape to stop the rubbing of polythene has started to peel off in places"
+- ❌ Never: "The polytunnel was waiting patiently for spring" (too poetic)
+
+**3. Genuinely excited about small wins**
+When something survives the winter or starts budding, Damo's properly chuffed. The enthusiasm
+is real but understated — he won't use exclamation marks on everything.
+
+- ✅ "It's good to see that they've started budding"
+- ✅ "I don't think I've been this prepared in years"
+- ❌ Never: "I was THRILLED to discover new growth!" (too over-the-top)
+
+**4. Practical, task-driven storytelling**
+Posts flow chronologically through what Damo actually did. He walks you through the work —
+what he tackled, in what order, and why. It reads like a mate telling you about their afternoon.
+
+- ✅ "I spent the first half an hour in the greenhouse and started tidying things up"
+- ✅ "Then I shifted across into the polytunnel"
+- ✅ "I've broken down all the old compost, removed all the roots"
+- ❌ Never: "Step 1: Clear the greenhouse. Step 2: Prepare compost." (too instructional)
+
+**5. Scottish context is a character, not a backdrop**
+The weather, the short growing season, the frosts — these aren't just mentioned, they shape
+decisions. Scotland is woven into the reasoning, not bolted on.
+
+- ✅ "The cold weather starts quicker in Scotland"
+- ✅ "I should have got a lot more given that the frosts start earlier up here"
+- ❌ Never: "As we all know, Scotland has a shorter growing season" (too textbook)
+
+**6. Forward-looking and optimistic**
+Even after talking about mice and cracked pots, Damo's already thinking about what's next.
+Posts should nearly always end looking ahead.
+
+- ✅ "I'll need to get some new compost to top up those plant pots waiting for my tomatoes"
+- ✅ "I definitely need to start thinking about the seeds I need to buy"
+- ❌ Never: "Only time will tell what the season brings" (too vague and philosophical)
+
+### Language & Phrasing
+
+**Words and phrases Damo actually uses:**
+- "shifted across" (moved to another area)
+- "rearing to go" / "looking rearing to go"
+- "tidied up" / "had a good tidy up"
+- "chopped out" (threw away / removed)
+- "got rid of" (not "disposed of" or "removed")
+- "topped up" (refilled / added more)
+- "broken down" (decomposed or taken apart)
+- "good to see" (pleased about something)
+- "not very clever" (self-deprecating — did something daft)
+- "fingers crossed"
+- "given that..." (explaining reasoning)
+- "I really hope to..." (genuine aspiration, not certainty)
+- "definitely need to..." (acknowledging a task)
+- "veg" (not "vegetables" in casual context)
+
+**Words and phrases Damo does NOT use:**
+- "delighted" / "thrilled" / "overjoyed" (too formal)
+- "endeavour" / "undertake" / "commence" (too corporate)
+- "one must" / "it is advisable" (too preachy)
+- "journey" when referring to gardening (too influencer-y)
+- "self-sufficiency" as a buzzword (he's just growing food)
+- "hack" / "game-changer" / "must-have" (too clickbait)
+
+**Sentence rhythm:**
+- Mix of longer flowing sentences and short punchy ones
+- Often connects thoughts with "and" or "but" rather than starting new sentences
+- Occasionally drops in a very short sentence for effect: "Not very clever."
+- Paragraphs are short — 2-4 sentences max. Don't let them bloat.
+
+### Post Length
+
+- **Garden updates:** 300-500 words. Get in, say what happened, get out.
+- **Seasonal planning posts:** Up to 600-700 words if there's a lot to cover.
+- **Quick updates:** 150-250 words is perfectly fine for a short session.
+- **Never drone on.** If a section feels like padding, cut it. Damo values brevity.
+
+### Emoji Usage
+
+- Use 1-2 emojis in the title (🌱 🥕 🍅 etc.)
+- Sparingly in the body — one at the end of a post is fine (🌱 or 🤞)
+- Never litter the post with emojis. This isn't Instagram.
+
+### What NOT to Write
+
+- Don't be preachy or give unsolicited advice to the reader
+- Don't use "we" when Damo means "I" — he's talking about his own garden
+- Don't add philosophical reflections about nature or the meaning of gardening
+- Don't pad out posts with filler sentences just to hit a word count
+- Don't make the Scottish weather sound whimsical — it's a genuine constraint
+- Don't use AI-sounding phrases: "it's worth noting", "in conclusion", "as mentioned earlier"
+- Don't start paragraphs with "So," repeatedly — once in a post is fine, not every paragraph
+
+### Example Voice Comparison
+
+**❌ Generic garden blog voice:**
+> "Today I ventured into the greenhouse for the first time this season. It was quite the sight!
+> After months of winter dormancy, there was certainly some tidying up to be done. I carefully
+> removed the remnants of last year's crops and began preparing for the exciting season ahead."
+
+**✅ Damo's actual voice:**
+> "First time in the greenhouse today — full of spiders and old plants from last season. I spent
+> the first half hour just tidying up, pulling out the old tomato plants and peppers from last
+> year. I've broken down all the old compost and removed the roots. It's looking a lot tidier
+> now and I don't think I've been this prepared in years."
+
+---
+
+### Damo's Garden Setup
+
+Beyond vegetables, Damo also grows:
+- **Grape trees** — bought in a sale at the end of last season, overwintered in the greenhouse, now starting to bud
+- **Rhubarb** — an old plant that goes dormant over winter and comes back each spring
+
+His growing spaces:
+- **Greenhouse** — a small glass greenhouse used for starting seeds, growing tomatoes and peppers in pots, and overwintering plants. Has a wooden bench/shelf along one side, and space for ~10 large pots on the floor.
+- **Polytunnel** — a larger polythene tunnel with two wooden raised beds down the centre, shelving along both sides, a water butt, and weed membrane on the floor. Used for protected growing. Can take a battering from Aberdeen wind — tape and polythene need regular repair.
+- **Outdoor raised beds** — visible through the greenhouse glass, with gravel paths between them.
+
+### Handling Voice Dictation
+
+Posts often originate from Damo dictating into his phone via speech-to-text. Be aware of common
+dictation artefacts and correct them sensibly:
+
+- Misheard words: "GR trees" → "grape trees", "sail" → "sale", "coach grass" → "couch grass"
+- Run-on sentences: Damo's dictation flows naturally — break into shorter sentences for readability but keep his phrasing
+- Missing punctuation: Add it, but match his casual rhythm — don't over-formalise
+- Repeated words or filler: Clean these up silently
+- If a word is ambiguous and you can't be sure what was meant, ask Damo rather than guessing
+
+---
+
+## 📸 Garden Reference Photos
+
+> Photos from 15 March 2026 — first tidy-up of the season. Stored in `docs/persona-photos/`.
+
+### `damo-greenhouse-selfie.jpg`
+Damo in the greenhouse — selfie from inside the glass greenhouse. He's wearing a blue zip-up hoodie and grinning. Behind him you can see black plant pots with compost (ready for tomatoes), and through the glass the polytunnel and outdoor raised beds are visible. Sunny but cloudy — typical Aberdeen spring day.
+
+### `greenhouse-tidy.jpg`
+Overhead view into the greenhouse after the tidy-up. The floor has ~10 black plant pots with broken-down compost (old roots removed, waiting for new compost and tomato plants). Grape trees on the bench showing early buds. Red watering can, bamboo canes on the wooden shelf, half-barrel planter. The polytunnel is visible through the glass behind.
+
+### `polytunnel-beds.jpg`
+Interior of the polytunnel looking down its length. Two wooden raised beds in the centre with dark soil/compost — cleared but needing topping up. Shelving along both sides cluttered with pots (terracotta and plastic), seed trays, and old plant debris. Water butt at the far end. Bags of Gro-Sure All-Purpose Compost in the foreground. Weed membrane flooring. Mid-tidy state — functional, not fancy.
+
+---
+
+## 🔄 Persona Update Log
+
+> Add entries here each time the persona section is updated, noting what was added or changed
+> and which post or conversation it came from.
+
+| Date | Source | What Changed |
+|------|--------|--------------|
+| 15 March 2026 | Greenhouse & polytunnel tidy-up conversation | Initial persona created — core voice traits, language patterns, post length guidance, example comparison |
+| 15 March 2026 | Photos + dictation review | Added garden setup (greenhouse, polytunnel, raised beds, grape trees, rhubarb). Added voice dictation handling guide. Added 3 reference photos with descriptions. |
+
 ### Markdown Formatting
 - Use `**bold**` for vegetable names and important terms
 - Use `- ` for bullet lists
