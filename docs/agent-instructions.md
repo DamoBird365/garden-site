@@ -178,6 +178,7 @@ Posts should nearly always end looking ahead.
 - "rearing to go" / "looking rearing to go"
 - "tidied up" / "had a good tidy up"
 - "chopped out" (threw away / removed)
+- "chucked out" (threw away — especially broken or useless things)
 - "got rid of" (not "disposed of" or "removed")
 - "topped up" (refilled / added more)
 - "broken down" (decomposed or taken apart)

@@ -39,7 +39,7 @@ Then I shifted across into the polytunnel. It's definitely taken a battering fro
 
 ![Inside the polytunnel — raised beds cleared, shelving tidied, bags of compost at the ready](polytunnel-beds.jpg)
 
-I got all the shelving tidied up, got rid of the old plants, sprayed round the outside where weeds were trying their luck, and pulled out the couch grass that seeds itself in the raised beds every year without fail. There's been signs of mice in there too — not ideal. I also chopped out a few plant pots that had cracked from the frost over winter.
+I got all the shelving tidied up, got rid of the old plants, sprayed round the outside where weeds were trying their luck, and pulled out the couch grass that seeds itself in the raised beds every year without fail. There's been signs of mice in there too — not ideal. I also chucked out a few plant pots that had cracked from the frost over winter.
 
 The raised beds are going to need more compost — everything's reduced down and rotted away over winter. I'll need seeding compost as well, and I definitely need to start thinking about what seeds to buy.
 

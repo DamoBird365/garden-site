@@ -28,6 +28,12 @@
   max-width: 400px;
 }
 
+/* -- Homepage: reduce gap between welcome text and weather widget -- */
+.first-entry {
+  min-height: auto;
+  margin-bottom: var(--gap);
+}
+
 [data-theme="dark"] .weather-card {
   background: #1a2e1a;
   border-color: var(--garden-green);
