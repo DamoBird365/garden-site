@@ -50,6 +50,7 @@ weather:
   recorded_at: "15 April 2026, 2:30pm"
 cover:
   image: ""
+  relative: true
   alt: "Description of the cover image"
   caption: ""
 affiliate_links:
@@ -75,6 +76,7 @@ ShowReadingTime: true
 | `vegetables_planted` | ✅ | Array of vegetables planted/sown TODAY. Use lowercase names. Leave as `[]` if none planted. **This links the post to the planting calendar on the site** |
 | `weather` | ✅ | Capture current Aberdeen weather. If you can call the Open-Meteo API, use it. Otherwise ask Damien or leave blank |
 | `cover.image` | Optional | Filename of cover image if provided (e.g., `"raised-bed.jpg"`). Also appears in the gallery. |
+| `cover.relative` | ✅ | Always set to `true` — images are in the post's page bundle folder, not the site root |
 | `images` | Optional | Array of additional photos for the gallery. Each entry needs `file` (filename) and `alt` (caption text). Cover image is included automatically — don't duplicate it here. |
 | `affiliate_links` | Optional | Array of Amazon product links relevant to the post. Always use tag `"damobird365-21"` |
 | `ShowToc` | ✅ | Set to `true` only for long posts with 3+ headings. Otherwise `false` |
@@ -376,6 +378,7 @@ weather:
   recorded_at: "15 April 2026, 2:30pm"
 cover:
   image: ""
+  relative: true
   alt: "Freshly sown carrot row in the raised bed"
   caption: ""
 affiliate_links:

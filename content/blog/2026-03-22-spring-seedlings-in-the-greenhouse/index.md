@@ -14,6 +14,7 @@ weather:
   recorded_at: "22 March 2026, 3:05pm"
 cover:
   image: "damo-and-eddie.jpg"
+  relative: true
   alt: "Damo and Eddie the cat in the greenhouse with freshly planted seed trays"
   caption: ""
 images:

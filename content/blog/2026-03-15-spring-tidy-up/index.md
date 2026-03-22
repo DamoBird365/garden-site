@@ -14,6 +14,7 @@ weather:
   recorded_at: "15 March 2026, 5pm"
 cover:
   image: "damo-greenhouse-selfie.jpg"
+  relative: true
   alt: "Damo in the greenhouse on the first tidy-up day of spring"
   caption: ""
 images:
