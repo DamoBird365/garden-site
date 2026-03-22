@@ -4,16 +4,16 @@
 {{ $description := .Description | default .Summary | plainify | truncate 200 | urlquery }}
 
 <div class="share-buttons">
-  <a class="share-btn twitter" href="https://twitter.com/intent/tweet?text={{ $title }}&url={{ $url }}" target="_blank" rel="noopener">
+  <a class="share-btn twitter" href="{{ printf `https://twitter.com/intent/tweet?text=%s&url=%s` $title $url | safeURL }}" target="_blank" rel="noopener">
     🐦 Twitter
   </a>
-  <a class="share-btn facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ $url }}" target="_blank" rel="noopener">
+  <a class="share-btn facebook" href="{{ printf `https://www.facebook.com/sharer/sharer.php?u=%s` $url | safeURL }}" target="_blank" rel="noopener">
     📘 Facebook
   </a>
-  <a class="share-btn pinterest" href="https://pinterest.com/pin/create/button/?url={{ $url }}&description={{ $title }}" target="_blank" rel="noopener">
+  <a class="share-btn pinterest" href="{{ printf `https://pinterest.com/pin/create/button/?url=%s&description=%s` $url $title | safeURL }}" target="_blank" rel="noopener">
     📌 Pinterest
   </a>
-  <a class="share-btn whatsapp" href="https://api.whatsapp.com/send?text={{ $title }}%20{{ $url }}" target="_blank" rel="noopener">
+  <a class="share-btn whatsapp" href="{{ printf `https://api.whatsapp.com/send?text=%s%%20%s` $title $url | safeURL }}" target="_blank" rel="noopener">
     💬 WhatsApp
   </a>
 </div>
