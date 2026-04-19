@@ -33,9 +33,13 @@ Not the most thrilling afternoon in the garden, but sometimes it's the quiet one
 
 First job was getting the **potatoes** set out to chit. I've lined them all up in trays along the polytunnel shelving where they can get a bit of light and start sprouting. There's a decent amount of them this year so I'm hopeful for a good crop once they go into the ground. They just need a few weeks to get their eyes going and then they'll be ready to plant out.
 
+![Rows of potatoes chitting in trays along the polytunnel shelving](potatoes-chitting.jpg)
+
 ## Sweetcorn in the Trays
 
 I also sowed some **sweetcorn** — D.T. Brown Sundance F1 — into seed trays. Got them into compost and they're sitting in the polytunnel where it's a bit warmer. Sweetcorn can be a gamble this far north but I've had decent results starting them off under cover and planting out once the frosts are done.
+
+![D.T. Brown sweetcorn and spinach seed packets with a freshly sown seed tray](sweetcorn-seeds-and-tray.jpg)
 
 ## Checking on the Veg
 
