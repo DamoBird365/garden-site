@@ -1,6 +1,6 @@
 ---
 title: "🥔 Chitting Tatties, Sweetcorn and a Supervisory Cat"
-date: 2026-04-19T15:22:00Z
+date: 2026-04-19T15:22:00+01:00
 draft: false
 author: "Damien B"
 description: "Potatoes set out to chit, sweetcorn sown, and Eddie the cat supervises operations in the polytunnel."
